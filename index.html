@@ -7,14 +7,9 @@
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
 body{
+margin:0;
+font-family:Arial,sans-serif;
 background:#f4f4f4;
 }
 
@@ -35,34 +30,32 @@ nav a{
 color:white;
 text-decoration:none;
 margin:0 15px;
-font-weight:bold;
 }
 
 .container{
-width:90%;
 max-width:1200px;
 margin:auto;
+padding:20px;
 }
 
 .search-box{
 text-align:center;
-margin:25px 0;
+margin-bottom:25px;
 }
 
 .search-box input{
 width:80%;
-max-width:700px;
 padding:12px;
 font-size:16px;
-border:1px solid #ccc;
 border-radius:8px;
+border:1px solid #ccc;
 }
 
 .phone-grid{
 display:flex;
 flex-wrap:wrap;
-justify-content:center;
 gap:20px;
+justify-content:center;
 }
 
 .phone-card{
@@ -70,8 +63,8 @@ background:white;
 width:300px;
 padding:20px;
 border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
 text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
 .phone-card img{
@@ -79,33 +72,16 @@ width:200px;
 height:250px;
 object-fit:cover;
 border-radius:10px;
-margin-bottom:15px;
-}
-
-.phone-card h2{
-margin-bottom:10px;
-}
-
-.phone-card p{
-margin-bottom:8px;
 }
 
 .btn{
 display:inline-block;
 background:#0d6efd;
 color:white;
-text-decoration:none;
 padding:10px 20px;
+text-decoration:none;
 border-radius:5px;
 margin-top:10px;
-}
-
-.news-section{
-background:white;
-padding:20px;
-margin-top:30px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 footer{
@@ -123,111 +99,71 @@ margin-top:30px;
 
 <header>
 <h1>📱 NextMobileHub</h1>
-<p>Know Tomorrow's Smartphones Today</p>
+<p>Latest Smartphones, Prices & Launch Dates</p>
 </header>
 
 <nav>
 <a href="#">Home</a>
-<a href="#">Upcoming Phones</a>
-<a href="#">Brands</a>
+<a href="#">Samsung</a>
+<a href="#">OnePlus</a>
+<a href="#">Apple</a>
 <a href="#">News</a>
-<a href="#">Reviews</a>
 </nav>
 
 <div class="container">
 
 <div class="search-box">
-<input type="text" id="searchInput" placeholder="Search Smartphone...">
+<input type="text" placeholder="Search Smartphone...">
 </div>
 
 <div class="phone-grid">
 
 <div class="phone-card">
-
-<img src="https://via.placeholder.com/200x250?text=Samsung+Galaxy+S26+Ultra" alt="Samsung Galaxy S26 Ultra">
+<img src="https://via.placeholder.com/200x250?text=Samsung+S26+Ultra">
 
 <h2>Samsung Galaxy S26 Ultra</h2>
 
 <p>Expected Price: ₹1,25,999</p>
 
-<p>Expected Launch: January 2027</p>
-
-<a href="samsung-s26-ultra.html" class="btn">View Details</a>
+<a href="samsung-s26-ultra.html" class="btn">
+View Details
+</a>
 
 </div>
 
 <div class="phone-card">
-
-<img src="https://via.placeholder.com/200x250?text=OnePlus+16" alt="OnePlus 16">
+<img src="https://via.placeholder.com/200x250?text=OnePlus+16">
 
 <h2>OnePlus 16</h2>
 
 <p>Launch Date: 31 October 2026</p>
 
-<p>Flagship Smartphone</p>
-
-<a href="oneplus-16.html" class="btn">View Details</a>
+<a href="oneplus-16.html" class="btn">
+View Details
+</a>
 
 </div>
 
 <div class="phone-card">
-
-<img src="https://via.placeholder.com/200x250?text=iPhone+18+Pro+Max" alt="iPhone 18 Pro Max">
+<img src="https://via.placeholder.com/200x250?text=iPhone+18+Pro+Max">
 
 <h2>iPhone 18 Pro Max</h2>
 
 <p>Expected Price: ₹1,49,999</p>
 
-<p>Expected Launch: September 2027</p>
-
-<a href="iphone-18-pro-max.html" class="btn">View Details</a>
-
-</div>
+<a href="iphone-18-pro-max.html" class="btn">
+View Details
+</a>
 
 </div>
-
-<div class="news-section">
-
-<h2>📰 Latest Mobile News</h2>
-
-<ul>
-<li>Upcoming flagship smartphones launching soon.</li>
-<li>New camera technologies improving smartphone photography.</li>
-<li>AI features becoming standard in premium phones.</li>
-<li>Foldable smartphones gaining popularity.</li>
-</ul>
 
 </div>
 
 </div>
 
 <footer>
-© 2026 NextMobileHub | All Rights Reserved
+© 2026 NextMobileHub
 </footer>
-
-<script>
-
-document.getElementById("searchInput").addEventListener("keyup", function() {
-
-let filter = this.value.toLowerCase();
-
-let cards = document.querySelectorAll(".phone-card");
-
-cards.forEach(function(card){
-
-let text = card.innerText.toLowerCase();
-
-if(text.includes(filter)){
-card.style.display = "block";
-}else{
-card.style.display = "none";
-}
-
-});
-
-});
-
-</script>
 
 </body>
 </html>
