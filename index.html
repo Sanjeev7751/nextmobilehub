@@ -3,25 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NextMobileHub</title>
+<title>NextMobileHub | OnePlus 16</title>
 
 <style>
 
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
+}
+
+body{
 background:#f4f4f4;
 }
 
 header{
-background:#0d6efd;
+background:#ff0000;
 color:white;
 text-align:center;
 padding:25px;
 }
 
 nav{
-background:#222;
+background:#111;
 padding:15px;
 text-align:center;
 }
@@ -30,6 +35,7 @@ nav a{
 color:white;
 text-decoration:none;
 margin:0 15px;
+font-weight:bold;
 }
 
 .container{
@@ -45,47 +51,87 @@ margin-bottom:25px;
 
 .search-box input{
 width:80%;
+max-width:700px;
 padding:12px;
 font-size:16px;
-border-radius:8px;
 border:1px solid #ccc;
+border-radius:8px;
 }
 
-.phone-grid{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-justify-content:center;
-}
-
-.phone-card{
+.hero{
 background:white;
-width:300px;
-padding:20px;
+padding:30px;
 border-radius:10px;
-text-align:center;
 box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
+.phone-card{
+text-align:center;
+}
+
 .phone-card img{
-width:200px;
-height:250px;
-object-fit:cover;
+width:280px;
+max-width:100%;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.phone-card h2{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.phone-card p{
+font-size:18px;
+margin-bottom:10px;
+}
+
+.specs{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+.spec-box{
+background:#fafafa;
+padding:15px;
 border-radius:10px;
+width:140px;
+box-shadow:0 0 5px rgba(0,0,0,.1);
+}
+
+.spec-box h3{
+font-size:24px;
+color:#ff0000;
 }
 
 .btn{
 display:inline-block;
-background:#0d6efd;
+margin-top:20px;
+background:#ff0000;
 color:white;
-padding:10px 20px;
 text-decoration:none;
-border-radius:5px;
-margin-top:10px;
+padding:12px 25px;
+border-radius:6px;
+font-weight:bold;
+}
+
+.news-section{
+background:white;
+margin-top:25px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.news-section h2{
+margin-bottom:15px;
 }
 
 footer{
-background:#222;
+background:#111;
 color:white;
 text-align:center;
 padding:15px;
@@ -94,68 +140,82 @@ margin-top:30px;
 
 </style>
 </head>
-
 <body>
 
 <header>
 <h1>📱 NextMobileHub</h1>
-<p>Latest Smartphones, Prices & Launch Dates</p>
+<p>OnePlus 16 Upcoming Smartphone</p>
 </header>
 
 <nav>
 <a href="#">Home</a>
-<a href="#">Samsung</a>
 <a href="#">OnePlus</a>
-<a href="#">Apple</a>
 <a href="#">News</a>
+<a href="#">Specs</a>
 </nav>
 
 <div class="container">
 
 <div class="search-box">
-<input type="text" placeholder="Search Smartphone...">
+<input type="text" placeholder="Search OnePlus 16...">
 </div>
 
-<div class="phone-grid">
+<div class="hero">
 
 <div class="phone-card">
-<img src="https://via.placeholder.com/200x250?text=Samsung+S26+Ultra">
 
-<h2>Samsung Galaxy S26 Ultra</h2>
-
-<p>Expected Price: ₹1,25,999</p>
-
-<a href="samsung-s26-ultra.html" class="btn">
-View Details
-</a>
-
-</div>
-
-<div class="phone-card">
-<img src="https://via.placeholder.com/200x250?text=OnePlus+16">
+<img src="https://via.placeholder.com/280x380?text=OnePlus+16" alt="OnePlus 16">
 
 <h2>OnePlus 16</h2>
 
-<p>Launch Date: 31 October 2026</p>
+<p><strong>Release Date:</strong> 31 October 2026</p>
+
+<p><strong>Status:</strong> Upcoming Smartphone</p>
+
+<div class="specs">
+
+<div class="spec-box">
+<h3>6.78"</h3>
+<p>Display</p>
+</div>
+
+<div class="spec-box">
+<h3>200MP</h3>
+<p>Camera</p>
+</div>
+
+<div class="spec-box">
+<h3>16GB</h3>
+<p>RAM</p>
+</div>
+
+<div class="spec-box">
+<h3>9000mAh</h3>
+<p>Battery</p>
+</div>
+
+</div>
 
 <a href="oneplus-16.html" class="btn">
-View Details
+View Full Specifications
 </a>
 
 </div>
 
-<div class="phone-card">
-<img src="https://via.placeholder.com/200x250?text=iPhone+18+Pro+Max">
-
-<h2>iPhone 18 Pro Max</h2>
-
-<p>Expected Price: ₹1,49,999</p>
-
-<a href="iphone-18-pro-max.html" class="btn">
-View Details
-</a>
-
 </div>
+
+<div class="news-section">
+
+<h2>📰 OnePlus 16 Highlights</h2>
+
+<ul>
+<li>Release Date: 31 October 2026</li>
+<li>6.78-inch LTPO AMOLED Display</li>
+<li>200MP Main Camera</li>
+<li>16GB RAM Variant</li>
+<li>9000mAh Silicon-Carbon Battery</li>
+<li>100W Fast Charging Support</li>
+</ul>
 
 </div>
 
