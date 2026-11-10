@@ -1,136 +1,402 @@
-body{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OnePlus 16 Full Specifications</title>
+
+<style>
+
+*{
     margin:0;
-    font-family:'Segoe UI',sans-serif;
-    background:#f5f7fa;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
+
+body{
+    background:#ececec;
+}
+
+/* Header */
 
 header{
-    background:linear-gradient(135deg,#ff0000,#b30000);
-    color:white;
+    background:#ff0000;
+    color:#fff;
     text-align:center;
-    padding:25px;
+    padding:40px 20px;
 }
 
+header h1{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+/* Container */
+
 .container{
-    max-width:1200px;
+    max-width:1100px;
     margin:auto;
     padding:20px;
 }
 
+/* Back Button */
+
 .back-btn{
     display:inline-block;
-    background:red;
+    background:#ff0000;
     color:white;
     text-decoration:none;
-    padding:12px 22px;
-    border-radius:30px;
+    padding:10px 18px;
+    border-radius:4px;
     font-weight:bold;
-    transition:.3s;
+    margin-bottom:15px;
 }
 
 .back-btn:hover{
-    background:#b30000;
+    background:#d60000;
 }
 
+/* Top Card */
+
 .top-box{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    background:#fff;
+    border-radius:10px;
+    padding:15px;
     display:flex;
-    flex-wrap:wrap;
-    gap:30px;
-    margin-top:20px;
+    align-items:flex-start;
+    gap:25px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+/* Image */
+
+.phone-image{
+    flex:0 0 220px;
 }
 
 .phone-image img{
-    width:300px;
-    max-width:100%;
-    border-radius:15px;
+    width:220px;
+    border-radius:8px;
     display:block;
 }
+
+/* Details */
 
 .phone-info{
     flex:1;
 }
 
-.phone-info h1{
-    margin-bottom:10px;
+.phone-info h2{
+    font-size:22px;
+    margin-bottom:15px;
 }
+
+.phone-info p{
+    margin-bottom:12px;
+    font-size:16px;
+}
+
+/* Quick Specs */
 
 .quick-specs{
     display:flex;
-    flex-wrap:wrap;
     gap:15px;
-    margin-top:20px;
+    flex-wrap:wrap;
+    margin-top:15px;
 }
 
 .quick-box{
-    background:#fafafa;
-    padding:15px;
-    width:130px;
+    background:#f2f2f2;
+    width:120px;
     text-align:center;
-    border-radius:12px;
-    box-shadow:0 0 8px rgba(0,0,0,.08);
+    padding:15px;
+    border-radius:8px;
 }
 
-.quick-box h2{
+.quick-box h3{
     color:red;
-    margin:0;
+    font-size:18px;
+    margin-bottom:10px;
 }
+
+/* Table */
 
 .spec-table{
     width:100%;
-    margin-top:30px;
+    margin-top:20px;
     border-collapse:collapse;
-    background:white;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    background:#fff;
 }
 
 .spec-table td{
-    border:1px solid #eee;
-    padding:14px;
+    border:1px solid #ccc;
+    padding:12px;
+    vertical-align:top;
 }
 
 .title{
-    width:250px;
-    background:#f7f7f7;
+    width:220px;
+    background:#f3f3f3;
     font-weight:bold;
 }
 
-.spec-table tr:hover{
-    background:#f9f9f9;
-}
+/* Footer */
 
 footer{
-    margin-top:40px;
     background:#111;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:15px;
+    margin-top:20px;
 }
 
-/* Mobile Responsive */
+/* Mobile */
 
-@media (max-width:768px){
+@media(max-width:768px){
 
-    .top-box{
-        flex-direction:column;
-        text-align:center;
-    }
+.top-box{
+    flex-direction:column;
+}
 
-    .phone-image img{
-        margin:auto;
-    }
+.phone-image{
+    flex:auto;
+    text-align:center;
+}
 
-    .quick-specs{
-        justify-content:center;
-    }
+.phone-image img{
+    margin:auto;
+}
 
-    .title{
-        width:150px;
-    }
+.quick-specs{
+    justify-content:center;
+}
 
 }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>📱 OnePlus 16</h1>
+    <p>Full Specifications</p>
+</header>
+
+<div class="container">
+
+<a href="index.html" class="back-btn">
+⬅ Back To Home
+</a>
+
+<div class="top-box">
+
+<div class="phone-image">
+<img src="oneplus-16-2.jpg" alt="OnePlus 16">
+</div>
+
+<div class="phone-info">
+
+<h2>OnePlus 16</h2>
+
+<p><strong>Status:</strong> Available</p>
+
+<p><strong>Release Date:</strong> 31 October 2026</p>
+
+<div class="quick-specs">
+
+<div class="quick-box">
+<h3>6.78"</h3>
+<p>Display</p>
+</div>
+
+<div class="quick-box">
+<h3>200MP</h3>
+<p>Camera</p>
+</div>
+
+<div class="quick-box">
+<h3>16GB</h3>
+<p>RAM</p>
+</div>
+
+<div class="quick-box">
+<h3>9000mAh</h3>
+<p>Battery</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Full Specification Table -->
+
+<table class="spec-table">
+
+<tr>
+<td class="title">Technology</td>
+<td>GSM / HSPA / LTE / 5G</td>
+</tr>
+
+<tr>
+<td class="title">Announced</td>
+<td>12 October 2026</td>
+</tr>
+
+<tr>
+<td class="title">Released</td>
+<td>31 October 2026</td>
+</tr>
+
+<tr>
+<td class="title">Dimensions</td>
+<td>161.4 x 76.7 x 8.5 mm</td>
+</tr>
+
+<tr>
+<td class="title">Weight</td>
+<td>217g</td>
+</tr>
+
+<tr>
+<td class="title">Build</td>
+<td>Glass Front, Aluminum Frame, Glass Back</td>
+</tr>
+
+<tr>
+<td class="title">SIM</td>
+<td>Dual Nano SIM + eSIM</td>
+</tr>
+
+<tr>
+<td class="title">Protection</td>
+<td>IP68/IP69K Dust & Water Resistant</td>
+</tr>
+
+<tr>
+<td class="title">Display Type</td>
+<td>LTPO AMOLED, HDR10+, Dolby Vision</td>
+</tr>
+
+<tr>
+<td class="title">Display Size</td>
+<td>6.78 Inches</td>
+</tr>
+
+<tr>
+<td class="title">Resolution</td>
+<td>1272 × 2772 Pixels</td>
+</tr>
+
+<tr>
+<td class="title">Operating System</td>
+<td>Android 17, OxygenOS 17</td>
+</tr>
+
+<tr>
+<td class="title">Chipset</td>
+<td>Snapdragon 8 Elite Extreme Gen 6 (2nm)</td>
+</tr>
+
+<tr>
+<td class="title">CPU</td>
+<td>Octa Core</td>
+</tr>
+
+<tr>
+<td class="title">GPU</td>
+<td>Adreno 850</td>
+</tr>
+
+<tr>
+<td class="title">Storage</td>
+<td>
+256GB + 12GB RAM<br>
+512GB + 12GB RAM<br>
+512GB + 16GB RAM<br>
+1TB + 16GB RAM
+</td>
+</tr>
+
+<tr>
+<td class="title">Main Camera</td>
+<td>200MP + 50MP + 50MP</td>
+</tr>
+
+<tr>
+<td class="title">Selfie Camera</td>
+<td>50MP</td>
+</tr>
+
+<tr>
+<td class="title">Video Recording</td>
+<td>8K@30fps, 4K@120fps</td>
+</tr>
+
+<tr>
+<td class="title">Audio</td>
+<td>Stereo Speakers</td>
+</tr>
+
+<tr>
+<td class="title">Wi‑Fi</td>
+<td>Wi‑Fi 7</td>
+</tr>
+
+<tr>
+<td class="title">Bluetooth</td>
+<td>Bluetooth 6.0</td>
+</tr>
+
+<tr>
+<td class="title">NFC</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td class="title">USB</td>
+<td>USB Type‑C 3.2</td>
+</tr>
+
+<tr>
+<td class="title">Fingerprint</td>
+<td>Ultrasonic Under Display</td>
+</tr>
+
+<tr>
+<td class="title">Battery</td>
+<td>9000mAh Silicon Carbon Battery</td>
+</tr>
+
+<tr>
+<td class="title">Charging</td>
+<td>
+100W Wired<br>
+50W Wireless<br>
+Reverse Wireless Charging
+</td>
+</tr>
+
+<tr>
+<td class="title">Colors</td>
+<td>Black, Silver, Orange</td>
+</tr>
+
+<tr>
+<td class="title">Price</td>
+<td>₹86,000</td>
+</tr>
+
+</table>
+
+</div>
+
+<footer>
+© 2026 NextMobileHub
+</footer>
+
+</body>
+</html>
