@@ -3,271 +3,376 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NextMobileHub | OnePlus 16</title>
+<title>NextMobileHub</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
-body{background:#f4f4f4;}
-header{background:#ff0000;color:white;text-align:center;padding:25px;}
-nav{background:#111;padding:15px;text-align:center;}
-nav a{color:white;text-decoration:none;margin:0 15px;font-weight:bold;}
-.container{max-width:1200px;margin:auto;padding:20px;}
-.search-box{text-align:center;margin-bottom:25px;}
-.search-box input{width:80%;max-width:700px;padding:12px;font-size:16px;border:1px solid #ccc;border-radius:8px;}
-.hero{background:white;padding:30px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.1);}
-.phone-card{text-align:center;}.phone-card img{width:280px;max-width:100%;border-radius:12px;margin-bottom:20px;}
-  .phone-card h2{font-size:36px;margin-bottom:10px;}
-.phone-card p{font-size:18px;margin-bottom:10px;}
-.specs{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;margin-top:25px;}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+/* Header */
+header{
+    background:linear-gradient(135deg,#ff0000,#b30000);
+    color:#fff;
+    text-align:center;
+    padding:30px 20px;
+}
+
+header h1{
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+/* Navigation */
+nav{
+    background:#111;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff4444;
+}
+
+/* Main Container */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:30px 0;
+}
+
+/* Search Box */
+.search-box{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.search-box input{
+    width:100%;
+    max-width:700px;
+    padding:15px;
+    border:none;
+    border-radius:50px;
+    font-size:16px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Cards Layout */
+.phone-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:25px;
+}
+
+/* Card */
+.phone-card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.phone-card:hover{
+    transform:translateY(-8px);
+}
+
+.phone-card img{
+    width:250px;
+    max-width:100%;
+    border-radius:15px;
+}
+
+.phone-card h2{
+    margin-top:15px;
+    margin-bottom:10px;
+    color:#111;
+}
+
+.phone-card p{
+    margin:6px 0;
+}
+
+/* Specs */
+.specs{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
 .spec-box{
-background:#fafafa;
-padding:15px;
-border-radius:10px;
-width:140px;
-box-shadow:0 0 5px rgba(0,0,0,.1);
+    background:#fafafa;
+    width:120px;
+    padding:12px;
+    border-radius:12px;
+    box-shadow:0 0 8px rgba(0,0,0,0.08);
 }
 
 .spec-box h3{
-font-size:24px;
-color:#ff0000;
+    color:red;
+    font-size:22px;
 }
 
+.spec-box p{
+    font-size:14px;
+}
+
+/* Button */
 .btn{
-display:inline-block;
-margin-top:20px;
-background:#ff0000;
-color:white;
-text-decoration:none;
-padding:12px 25px;
-border-radius:6px;
-font-weight:bold;
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:red;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
 }
 
+.btn:hover{
+    background:#b30000;
+}
+
+/* Highlights */
 .news-section{
-background:white;
-margin-top:25px;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+    margin-top:20px;
+    text-align:left;
 }
 
-.news-section h2{
-margin-bottom:15px;
+.news-section h3{
+    color:red;
+    margin-bottom:10px;
 }
 
+.news-section ul{
+    padding-left:20px;
+}
+
+.news-section li{
+    margin-bottom:8px;
+}
+
+/* Footer */
 footer{
-background:#111;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:30px;
+    margin-top:40px;
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.no-result{
+    text-align:center;
+    color:red;
+    font-size:20px;
+    display:none;
+    margin-top:20px;
 }
 
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>📱 NextMobileHub</h1>
-<p>OnePlus 16 Upcoming Smartphone</p>
+    <h1>📱 NextMobileHub</h1>
+    <p>Latest Upcoming Smartphone News & Specifications</p>
 </header>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">OnePlus</a>
-<a href="#">News</a>
-<a href="#">Specs</a>
+    <a href="#">Home</a>
+    <a href="#">OnePlus</a>
+    <a href="#">iQOO</a>
+    <a href="#">News</a>
 </nav>
 
 <div class="container">
 
-<div class="search-box">
-<input type="text" placeholder="Search OnePlus 16...">
+    <!-- Search -->
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search Smartphone..."
+            onkeyup="searchPhones()">
+    </div>
+
+    <div id="noResult" class="no-result">
+        No Smartphone Found ❌
+    </div>
+
+    <div class="phone-grid">
+
+        <!-- OnePlus -->
+        <div class="phone-card">
+
+            <img src="oneplus-16.jpg" alt="OnePlus 16">
+
+            <h2>OnePlus 16</h2>
+
+            <p><strong>Release Date:</strong> October 2026</p>
+            <p><strong>Status:</strong> Upcoming</p>
+
+            <div class="specs">
+
+                <div class="spec-box">
+                    <h3>6.78"</h3>
+                    <p>Display</p>
+                </div>
+
+                <div class="spec-box">
+                    <h3>200MP</h3>
+                    <p>Camera</p>
+                </div>
+
+                <div class="spec-box">
+                    <h3>16GB</h3>
+                    <p>RAM</p>
+                </div>
+
+                <div class="spec-box">
+                    <h3>9000mAh</h3>
+                    <p>Battery</p>
+                </div>
+
+            </div>
+
+            <a href="oneplus-16.html" class="btn">
+                View Specifications
+            </a>
+
+            <div class="news-section">
+
+                <h3>Highlights</h3>
+
+                <ul>
+                    <li>LTPO AMOLED Display</li>
+                    <li>200MP Main Camera</li>
+                    <li>16GB RAM</li>
+                    <li>9000mAh Battery</li>
+                    <li>100W Fast Charging</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- iQOO -->
+        <div class="phone-card">
+
+            <img src="iqoo-16.jpg" alt="iQOO 16">
+
+            <h2>iQOO 16 5G</h2>
+
+            <p><strong>Release Date:</strong> December 2026</p>
+            <p><strong>Status:</strong> Launching Soon</p>
+
+            <div class="specs">
+
+                <div class="spec-box">
+                    <h3>6.85"</h3>
+                    <p>Display</p>
+                </div>
+
+                <div class="spec-box">
+                    <h3>50MP</h3>
+                    <p>Camera</p>
+                </div>
+
+                <div class="spec-box">
+                    <h3>16GB</h3>
+                    <p>RAM</p>
+                </div>
+
+                <div class="spec-box">
+                    <h3>8400mAh</h3>
+                    <p>Battery</p>
+                </div>
+
+            </div>
+
+            <a href="iqoo-16-5g.html" class="btn">
+                View Specifications
+            </a>
+
+            <div class="news-section">
+
+                <h3>Highlights</h3>
+
+                <ul>
+                    <li>165Hz AMOLED Display</li>
+                    <li>Snapdragon 8 Elite Gen 6</li>
+                    <li>Triple 50MP Camera</li>
+                    <li>8400mAh Battery</li>
+                    <li>100W Fast Charging</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
 </div>
 
-<div class="hero">
-
-<div class="phone-card">
-
-<img src="oneplus-16-2.jpg" alt="OnePlus 16">
-
-<h2>OnePlus 16</h2>
-
-<p><strong>Release Date:</strong> 31 October 2026</p>
-
-<p><strong>Status:</strong> Upcoming Smartphone</p>
-
-<div class="specs">
-
-<div class="spec-box">
-<h3>6.78"</h3>
-<p>Display</p>
-</div>
-
-<div class="spec-box">
-<h3>200MP</h3>
-<p>Camera</p>
-</div>
-
-<div class="spec-box">
-<h3>16GB</h3>
-<p>RAM</p>
-</div>
-
-<div class="spec-box">
-<h3>9000mAh</h3>
-<p>Battery</p>
-</div>
-
-</div>
-
-<a href="oneplus-16.html" class="btn">
-View Full Specifications
-</a>
-
-</div>
-
-</div>
-
-<div class="news-section">
-
-<h2>📰 OnePlus 16 Highlights</h2>
-
-<ul>
-<li>Release Date: 31 October 2026</li>
-<li>6.78-inch LTPO AMOLED Display</li>
-<li>200MP Main Camera</li>
-<li>16GB RAM Variant</li>
-<li>9000mAh Silicon-Carbon Battery</li>
-<li>100W Fast Charging Support</li>
-</ul>
-
-</div>
-
-</div>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NextMobileHub | OnePlus 16</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
-body{background:#f4f4f4;}
-header{background:#ff0000;color:white;text-align:center;padding:25px;}
-nav{background:#111;padding:15px;text-align:center;}
-nav a{color:white;text-decoration:none;margin:0 15px;font-weight:bold;}
-.container{max-width:1200px;margin:auto;padding:20px;}
-.search-box{text-align:center;margin-bottom:25px;}
-.search-box input{width:80%;max-width:700px;padding:12px;font-size:16px;border:1px solid #ccc;border-radius:8px;}
-.hero{background:white;padding:30px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.1);}
-.phone-card{text-align:center;}.phone-card img{width:280px;max-width:100%;border-radius:12px;margin-bottom:20px;}
-  .phone-card h2{font-size:36px;margin-bottom:10px;}
-.phone-card p{font-size:18px;margin-bottom:10px;}
-.specs{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;margin-top:25px;}
-.spec-box{
-background:#fafafa;
-padding:15px;
-border-radius:10px;
-width:140px;
-box-shadow:0 0 5px rgba(0,0,0,.1);
-}
-
-.spec-box h3{
-font-size:24px;
-color:#ff0000;
-}
-
-.btn{
-display:inline-block;
-margin-top:20px;
-background:#ff0000;
-color:white;
-text-decoration:none;
-padding:12px 25px;
-border-radius:6px;
-font-weight:bold;
-}
-
-.news-section{
-background:white;
-margin-top:25px;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-
-.news-section h2{
-margin-bottom:15px;
-}
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:30px;
-}
-
-</style>
-</head>
-<body>
-<div class="phone-card">
-
-<img src="iqoo 16.jpg" alt="iQOO 16 5G">
-
-<h2>iQOO 16 5G</h2>
-
-<p><strong>Release Date:</strong> December 2026</p>
-
-<p><strong>Status:</strong> Available. December 2026</p>
-
-<div class="specs">
-
-<div class="spec-box">
-<h3>6.85"</h3>
-<p>Display</p>
-</div>
-
-<div class="spec-box">
-<h3>50MP</h3>
-<p>Camera</p>
-</div>
-
-<div class="spec-box">
-<h3>16GB</h3>
-<p>RAM</p>
-</div>
-
-<div class="spec-box">
-<h3>8400mAh</h3>
-<p>Battery</p>
-</div>
-
-</div>
-
-<a href="iqoo-16-5g.html" class="btn">
-View Full Specifications
-</a>
-
-</div>
-
-<div class="news-section">
-
-<h2>📰 iQOO 16 5G Highlights</h2>
-
-<ul>
-<li>Released on December 2026</li>
-<li>6.85-inch AMOLED Display with 165Hz Refresh Rate</li>
-<li>Snapdragon 8 Elite Extreme Gen 6 (2nm)</li>
-<li>Triple 50MP Rear Camera Setup</li>
-<li>32MP Selfie Camera</li>
-<li>Up to 16GB RAM & 1TB Storage</li>
-<li>8400mAh Silicon-Carbon Battery</li>
-<li>100W Wired + 40W Wireless Charging</li>
-<li>IP68/IP69 Water & Dust Resistance</li>
-<li>Android 17 with OriginOS 7</li>
-</ul>
-
-</div>
 <footer>
-© 2026 NextMobileHub
+    © 2026 NextMobileHub | All Rights Reserved
 </footer>
+
+<script>
+function searchPhones(){
+
+    let input =
+    document.getElementById("searchInput")
+    .value
+    .toLowerCase();
+
+    let cards =
+    document.querySelectorAll(".phone-card");
+
+    let found = false;
+
+    cards.forEach(card => {
+
+        let text =
+        card.textContent.toLowerCase();
+
+        if(text.includes(input)){
+            card.style.display="block";
+            found=true;
+        }
+        else{
+            card.style.display="none";
+        }
+
+    });
+
+    document.getElementById("noResult").style.display =
+    found ? "none" : "block";
+}
+</script>
 
 </body>
 </html>
