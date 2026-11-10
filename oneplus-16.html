@@ -47,10 +47,15 @@ header{
     width:300px;
     max-width:100%;
     border-radius:15px;
+    display:block;
 }
 
 .phone-info{
     flex:1;
+}
+
+.phone-info h1{
+    margin-bottom:10px;
 }
 
 .quick-specs{
@@ -79,8 +84,8 @@ header{
     margin-top:30px;
     border-collapse:collapse;
     background:white;
-    overflow:hidden;
     border-radius:15px;
+    overflow:hidden;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
@@ -95,7 +100,7 @@ header{
     font-weight:bold;
 }
 
-tr:hover{
+.spec-table tr:hover{
     background:#f9f9f9;
 }
 
@@ -107,20 +112,25 @@ footer{
     padding:20px;
 }
 
-/* Mobile */
+/* Mobile Responsive */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.top-box{
-    flex-direction:column;
-    text-align:center;
-}
+    .top-box{
+        flex-direction:column;
+        text-align:center;
+    }
 
-.quick-specs{
-    justify-content:center;
-}
+    .phone-image img{
+        margin:auto;
+    }
 
-.title{
-    width:150px;
-}
+    .quick-specs{
+        justify-content:center;
+    }
+
+    .title{
+        width:150px;
+    }
+
 }
