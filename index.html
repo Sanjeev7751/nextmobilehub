@@ -2,410 +2,225 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NextMobileHub</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
-}
-
-body{
-    background:#f5f7fa;
-}
-
-/* Header */
-header{
-    background:linear-gradient(135deg,#ff0000,#b30000);
-    color:#fff;
-    text-align:center;
-    padding:30px 20px;
-}
-
-header h1{
-    font-size:42px;
-}
-
-header p{
-    margin-top:10px;
-}
-
-/* Navigation */
-nav{
-    background:#111;
-    text-align:center;
-    padding:15px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-nav a:hover{
-    color:#ff4444;
-}
-
-/* Main Container */
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    padding:30px 0;
-}
-
-/* Search Box */
-.search-box{
-    text-align:center;
-    margin-bottom:30px;
-}
-
-.search-box input{
-    width:100%;
-    max-width:700px;
-    padding:15px;
-    border:none;
-    border-radius:50px;
-    font-size:16px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* Cards Layout */
-.phone-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-    gap:25px;
-}
-
-/* Card */
-.phone-card{
-    background:white;
-    border-radius:20px;
-    padding:25px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.12);
-    transition:0.3s;
-}
-
-.phone-card:hover{
-    transform:translateY(-8px);
-}
-
-.phone-card img{
-    width:250px;
-    max-width:100%;
-    border-radius:15px;
-}
-
-.phone-card h2{
-    margin-top:15px;
-    margin-bottom:10px;
-    color:#111;
-}
-
-.phone-card p{
-    margin:6px 0;
-}
-
-/* Specs */
-.specs{
-    display:flex;
-    justify-content:center;
-    gap:12px;
-    flex-wrap:wrap;
-    margin-top:20px;
-}
-
-.spec-box{
-    background:#fafafa;
-    width:120px;
-    padding:12px;
-    border-radius:12px;
-    box-shadow:0 0 8px rgba(0,0,0,0.08);
-}
-
-.spec-box h3{
-    color:red;
-    font-size:22px;
-}
-
-.spec-box p{
-    font-size:14px;
-}
-
-/* Button */
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:red;
-    color:white;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:#b30000;
-}
-
-/* Highlights */
-.news-section{
-    margin-top:20px;
-    text-align:left;
-}
-
-.news-section h3{
-    color:red;
-    margin-bottom:10px;
-}
-
-.news-section ul{
-    padding-left:20px;
-}
-
-.news-section li{
-    margin-bottom:8px;
-}
-
-/* Footer */
-footer{
-    margin-top:40px;
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-.no-result{
-    text-align:center;
-    color:red;
-    font-size:20px;
-    display:none;
-    margin-top:20px;
-}
-
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NextMobileHub – Upcoming Smartphones, Specs &amp; Launch Dates</title>
+<meta name="description" content="Latest upcoming smartphones with launch dates, prices and full specifications: OnePlus 16, iQOO 16 5G, Xiaomi 18 Pro and more.">
+<meta name="theme-color" content="#e11d2e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NextMobileHub – Upcoming Smartphones, Specs &amp; Launch Dates">
+<meta property="og:description" content="Launch dates, prices and full specifications of the newest smartphones.">
+<meta property="og:image" content="oneplus-16-2.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e11d2e'/%3E%3Crect x='20' y='10' width='24' height='44' rx='5' fill='none' stroke='white' stroke-width='4'/%3E%3Ccircle cx='32' cy='46' r='2.5' fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>📱 NextMobileHub</h1>
-    <p>Latest Upcoming Smartphone News & Specifications</p>
+<a class="skip-link" href="#phones">Skip to phones</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="NextMobileHub home">Next<span>Mobile</span>Hub</a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="oneplus-16.html">OnePlus</a></li>
+        <li><a href="Iqoo%2016.html">iQOO</a></li>
+        <li><a href="Xiaomi%2018%20Pro.html">Xiaomi</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">News</a>
-    <a href="#">OnePlus</a>
-    <a href="#">iQOO</a>
-    <a href="#">XIAOMI</a>
-</nav>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <span class="eyebrow">Upcoming smartphones</span>
+      <h1 id="hero-title">Know every flagship before it launches.</h1>
+      <p class="lead">Launch dates, prices and full specifications for the newest smartphones, all in one place.</p>
 
-<div class="container">
-
-    <!-- Search -->
-    <div class="search-box">
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="🔍 Search Smartphone..."
-            onkeyup="searchPhones()">
+      <form class="search" role="search" onsubmit="return false">
+        <label class="sr-only" for="searchInput">Search smartphones</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" id="searchInput" placeholder="Search by name, brand or feature…" autocomplete="off">
+      </form>
     </div>
+  </section>
 
-    <div id="noResult" class="no-result">
-        No Smartphone Found ❌
-    </div>
+  <section class="section" id="phones" aria-labelledby="phones-title">
+    <div class="container">
+      <h2 class="sr-only" id="phones-title">Smartphones</h2>
 
-    <div class="phone-grid">
-
-        <!-- OnePlus -->
-        <div class="phone-card">
-
-            <img src="oneplus-16-2.jpg" alt="OnePlus 16">
-
-            <h2>OnePlus 16</h2>
-
-            <p><strong>Release Date:</strong> October 2026</p>
-            <p><strong>Status:</strong> Upcoming</p>
-
-            <div class="specs">
-                <div class="spec-box">
-                    <h3>6.78"</h3>
-                    <p>Display</p>
-                </div>
-                <div class="spec-box">
-                    <h3>200MP</h3>
-                    <p>Camera</p>
-                </div>
-                <div class="spec-box">
-                    <h3>16GB</h3>
-                    <p>RAM</p>
-                </div>
-                <div class="spec-box">
-                    <h3>9000mAh</h3>
-                    <p>Battery</p>
-                </div>
-            </div>
-
-            <a href="oneplus-16.html" class="btn">
-                View Specifications
-            </a>
-
-            <div class="news-section">
-
-                <h3>Highlights</h3>
-
-                <ul>
-                    <li>LTPO AMOLED Display</li>
-                    <li>200MP Main Camera</li>
-                    <li>16GB RAM</li>
-                    <li>9000mAh Battery</li>
-                    <li>100W Fast Charging</li>
-                </ul>
-
-            </div>
-
+      <div class="toolbar">
+        <div class="chips" role="group" aria-label="Filter by brand">
+          <button class="chip" type="button" data-brand="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-brand="oneplus" aria-pressed="false">OnePlus</button>
+          <button class="chip" type="button" data-brand="iqoo" aria-pressed="false">iQOO</button>
+          <button class="chip" type="button" data-brand="xiaomi" aria-pressed="false">Xiaomi</button>
         </div>
+        <p class="count" id="count" aria-live="polite"></p>
+      </div>
 
-        <!-- iQOO -->
-        <div class="phone-card">
+      <div class="phone-grid" id="grid">
 
-            <img src="iqoo 16.jpg" alt="iQOO 16">
-
-            <h2>iQOO 16 5G</h2>
-
-            <p><strong>Release Date:</strong> December 2026</p>
-            <p><strong>Status:</strong> Launching Soon</p>
-            
-            <div class="specs">
-                <div class="spec-box">
-                     <h3>6.85"</h3>
-                    <p>Display</p>
-          </div>  
-                <div class="spec-box">
-                    <h3>200MP</h3>
-                    <p>Camera</p>
-          </div>  
-                <div class="spec-box">
-                    <h3>16GB</h3>
-                    <p>RAM</p>
-          </div>  
-                <div class="spec-box">
-                    <h3>9000mAh</h3>
-                    <p>Battery</p>
-                </div>
+        <!-- OnePlus 16 -->
+        <article class="card" data-brand="oneplus">
+          <a class="card-media" href="oneplus-16.html" tabindex="-1" aria-hidden="true">
+            <img src="oneplus-16-2.jpg" alt="" width="710" height="635" loading="lazy">
+            <span class="badge">Available</span>
+          </a>
+          <div class="card-body">
+            <div>
+              <p class="brand-label">OnePlus</p>
+              <h2><a href="oneplus-16.html">OnePlus 16</a></h2>
+              <p class="release"><strong>Release:</strong> 31 October 2026</p>
             </div>
-
-            <a href="Iqoo 16.html" class="btn">
-                View Specifications
-            </a>
-
-            <div class="news-section">
-
-                <h3>Highlights</h3>
-
-                <ul>
-                    <li>165Hz AMOLED Display</li>
-                    <li>Snapdragon 8 Elite Gen 6</li>
-                    <li>Triple 50MP Camera</li>
-                    <li>8400mAh Battery</li>
-                    <li>100W Fast Charging</li>
-                </ul>
-
+            <div class="stats">
+              <div class="stat"><strong>6.78"</strong><span>Display</span></div>
+              <div class="stat"><strong>200MP</strong><span>Camera</span></div>
+              <div class="stat"><strong>16GB</strong><span>RAM</span></div>
+              <div class="stat"><strong>9000mAh</strong><span>Battery</span></div>
             </div>
-</div>
-     <!--Xiaomi-->
-        <div class="phone-card">
-            <img src="Xiaomi 18 Pro.jpg" alt="Xiaomi 18 Pro">
-        <div class="phone-info">
-<h2>Xiaomi 18 Pro</h2>
-            <p><strong>Release Date:</strong>December 2026</p>
-            <p><strong>Status:</strong>Launching Soon</p>
+            <ul class="highlights">
+              <li>LTPO AMOLED display</li>
+              <li>200MP main camera</li>
+              <li>9000mAh battery with 100W fast charging</li>
+            </ul>
+            <div class="card-cta">
+              <a class="btn btn--block" href="oneplus-16.html">View specifications</a>
+            </div>
+          </div>
+        </article>
 
-            <div class="specs">
-                <div class="spec-box">
-                     <h3>6.4"</h3>
-                    <p>Display</p>
-          </div>  
-                <div class="spec-box">
-                    <h3>200MP</h3>
-                    <p>Camera</p>
-          </div>  
-                <div class="spec-box">
-                    <h3>16GB</h3>
-                    <p>RAM</p>
-          </div>  
-                <div class="spec-box">
-                    <h3>7000mAh</h3>
-                    <p>Battery</p>
-         </div>
-     </div>
-         <a href="Xiaomi 18 Pro.html" class="btn">
-                View Specifications
-            </a>
+        <!-- iQOO 16 -->
+        <article class="card" data-brand="iqoo">
+          <a class="card-media" href="Iqoo%2016.html" tabindex="-1" aria-hidden="true">
+            <img src="iqoo%2016.jpg" alt="" loading="lazy">
+            <span class="badge">Launching soon</span>
+          </a>
+          <div class="card-body">
+            <div>
+              <p class="brand-label">iQOO</p>
+              <h2><a href="Iqoo%2016.html">iQOO 16 5G</a></h2>
+              <p class="release"><strong>Release:</strong> December 2026</p>
+            </div>
+            <div class="stats">
+              <div class="stat"><strong>6.85"</strong><span>Display</span></div>
+              <div class="stat"><strong>50MP</strong><span>Camera</span></div>
+              <div class="stat"><strong>16GB</strong><span>RAM</span></div>
+              <div class="stat"><strong>8400mAh</strong><span>Battery</span></div>
+            </div>
+            <ul class="highlights">
+              <li>165Hz AMOLED display</li>
+              <li>Snapdragon 8 Elite Extreme Gen 6</li>
+              <li>Triple 50MP camera, 100W fast charging</li>
+            </ul>
+            <div class="card-cta">
+              <a class="btn btn--block" href="Iqoo%2016.html">View specifications</a>
+            </div>
+          </div>
+        </article>
 
-            <div class="news-section">
+        <!-- Xiaomi 18 Pro -->
+        <article class="card" data-brand="xiaomi">
+          <a class="card-media" href="Xiaomi%2018%20Pro.html" tabindex="-1" aria-hidden="true">
+            <img src="Xiaomi%2018%20Pro.jpg" alt="" width="732" height="800" loading="lazy">
+            <span class="badge">Launching soon</span>
+          </a>
+          <div class="card-body">
+            <div>
+              <p class="brand-label">Xiaomi</p>
+              <h2><a href="Xiaomi%2018%20Pro.html">Xiaomi 18 Pro</a></h2>
+              <p class="release"><strong>Release:</strong> December 2026</p>
+            </div>
+            <div class="stats">
+              <div class="stat"><strong>6.4"</strong><span>Display</span></div>
+              <div class="stat"><strong>200MP</strong><span>Camera</span></div>
+              <div class="stat"><strong>16GB</strong><span>RAM</span></div>
+              <div class="stat"><strong>7000mAh</strong><span>Battery</span></div>
+            </div>
+            <ul class="highlights">
+              <li>120Hz LTPO AMOLED display</li>
+              <li>Snapdragon 8 Elite Gen 6 (2nm)</li>
+              <li>100W wired, 50W wireless, 27W reverse charging</li>
+            </ul>
+            <div class="card-cta">
+              <a class="btn btn--block" href="Xiaomi%2018%20Pro.html">View specifications</a>
+            </div>
+          </div>
+        </article>
 
-               <ul>
-                    <li>120Hz AMOLED Display</li>
-                    <li>Qualcomm Snapdragon 8 Elite Gen 6 (2 nm)</li>
-                    <li>200MP Main Camera</li>
-                    <li>7000mAh Battery</li>
-                    <li>100W wired 50W wireless 27W reverse wireless</li>
-                </ul>
-</div>
-</div>
-</div>
-</div>
-        </div>
+      </div>
 
+      <div class="empty" id="empty" hidden>
+        <h2>No smartphone found</h2>
+        <p>Try a different name, brand or feature.</p>
+        <button class="btn" type="button" id="reset">Clear search</button>
+      </div>
     </div>
-</div>
+  </section>
+</main>
 
-<footer>
-    © 2026 NextMobileHub | All Rights Reserved
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">Next<span>Mobile</span>Hub</a>
+        <p class="footer-note">Launch dates, prices and specifications of upcoming smartphones. Details may change until official release.</p>
+      </div>
+      <div>
+        <h3>Browse</h3>
+        <ul class="footer-links">
+          <li><a href="oneplus-16.html">OnePlus 16</a></li>
+          <li><a href="Iqoo%2016.html">iQOO 16 5G</a></li>
+          <li><a href="Xiaomi%2018%20Pro.html">Xiaomi 18 Pro</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2026 NextMobileHub. All rights reserved.</p>
+  </div>
 </footer>
 
 <script>
-function searchPhones(){
+(function () {
+  var input = document.getElementById('searchInput');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#grid .card'));
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var empty = document.getElementById('empty');
+  var count = document.getElementById('count');
+  var brand = 'all';
 
-    let input =
-    document.getElementById("searchInput")
-    .value
-    .toLowerCase();
-
-    let cards =
-    document.querySelectorAll(".phone-card");
-
-    let found = false;
-
-    cards.forEach(card => {
-
-        let text =
-        card.textContent.toLowerCase();
-
-        if(text.includes(input)){
-            card.style.display="block";
-            found=true;
-        }
-        else{
-            card.style.display="none";
-        }
-
+  function apply() {
+    var q = input.value.trim().toLowerCase();
+    var shown = 0;
+    cards.forEach(function (card) {
+      var okBrand = brand === 'all' || card.dataset.brand === brand;
+      var okText = !q || card.textContent.toLowerCase().indexOf(q) !== -1;
+      var show = okBrand && okText;
+      card.hidden = !show;
+      if (show) shown++;
     });
+    empty.hidden = shown !== 0;
+    count.textContent = shown + (shown === 1 ? ' phone' : ' phones');
+  }
 
-    document.getElementById("noResult").style.display =
-    found ? "none" : "block";
-}
+  input.addEventListener('input', apply);
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      brand = chip.dataset.brand;
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', String(c === chip)); });
+      apply();
+    });
+  });
+  document.getElementById('reset').addEventListener('click', function () {
+    input.value = '';
+    brand = 'all';
+    chips.forEach(function (c) { c.setAttribute('aria-pressed', String(c.dataset.brand === 'all')); });
+    apply();
+    input.focus();
+  });
+
+  apply();
+})();
 </script>
 
 </body>
